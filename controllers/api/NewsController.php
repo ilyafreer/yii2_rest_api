@@ -35,8 +35,13 @@ class NewsController extends ActiveController
      */
     public function actionListByCategoryId(int $id)
     {
+        if(empty($id)){
+            return 'Не верный параметр';
+        }
+
         $categories = NewsCategory::find()->all();
-        $currentCategoryId = empty($id) ? 0 : NewsCategory::findOne($id)->id;
+        $currentCategoryId = NewsCategory::findOne($id)->id;
+
         $result = NewsCategory::getRootCategories($categories);
         $tree = NewsCategory::buildCategoriesTree($result, $currentCategoryId);
         $ids = [$currentCategoryId];

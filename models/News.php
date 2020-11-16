@@ -47,8 +47,8 @@ class News extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'news_category_id' => 'News Category ID',
-            'title' => 'Title',
-            'content' => 'Content',
+            'title' => 'Название',
+            'content' => 'Содержание',
         ];
     }
 

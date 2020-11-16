@@ -11,4 +11,17 @@ REST API<br>
 Ограничение на число запросов RateLimitInterface<br>
 
 Поднятие проекта через docker-compose<br>
-Запуск миграций создаст таблицы и заполнит демо данными<br>
+Запуск миграций создаст таблицы и заполнит демо данными<br><br>
+
+Примеры работы<br>
+![alt text](examples/p1.png "Главная страница")
+![alt text](examples/p2.png "Главная редактирование новостей")
+![alt text](examples/p3.png "Редактирование категорий")<br>
+Пример запроса через браузер (без передачи json заголовков) и ответ в xml<br>
+![alt text](examples/p4.png "Обращение к API в xml")<br>
+Получение новостей по категории<br>
+![alt text](examples/p5.png "Обращение к API в json")<br>
+Получение всех новостей<br>
+![alt text](examples/p6.png "Обращение к API в json")<br>
+Запрос на получение всех категорий (рубрик)<br>
+![alt text](examples/p7.png "Обращение к API в json")
